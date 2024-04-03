@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Shashvatay Solutions...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="LOgo.jpg" alt="img" style="background:white";></a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#about" class="nav-link">About</a> </li>
+		  <li> <a href="#List" class="nav-link">List</a> </li>
+          <li> <a href="#services" class="nav-link">Services</a> </li>
+          <li> <a href="#blog" class="nav-link">Blog</a> </li>
+          <li> <a href="#projects" class="nav-link">Projects</a> </li>
+          <li> <a href="#contact" class="nav-link">Contact</a> </li>
+        </ul>
+		
+		</nav>
+    </div>
+  </header>
+  <script>
+    const navMenu = document.querySelector('.nav-menu');
+
+    function mobileMenu() {
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      navMenu.classList.remove("active");
+    }
+  </script>
+  
+  
+<!--home-->
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>The Better Way<br>To Buy Real Estate..</h1>
+          <p>We Build Communities Worth Living In.<br>Feel Real Freedom with Lots Of Space And Green Areas...</p>
+        </div>
+      </div>
+      <div class="image">
+        <img src="home3.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="cafeout.jpg" alt="" class="slide active" onclick="img('css/cafeout.jpg')">
+        <img src="home4.jpg" alt="" class="slide" onclick="img('home4.jpg')">
+        <img src="home5.jpg" alt="" class="slide" onclick="img('home5.jpg')">
+        <img src="home6.jpg" alt="" class="slide" onclick="img('home6.jpg')">
+      </div>
+    </div>
+  </section>
+  <!--/home-->
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  
+  
+  
+  <!--about-->
+    <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="real">
+          <img src="H.jpg" alt="real" class="image1">
+          <img src="F.jpg" alt="real" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+          <h2>Welcome to your new home</h2>
+          <p>Real estate is considered real property that includes land and anything permanently attached to it or built on it, whether natural or man-made.</p>
+          <p>Real estate platform is a digital space where realtors, home sellers, and homebuyers can get in touch to make a purchase or rent contract for a real estate item.</p>
+		  <p>Market Demand And Sales Price. There are many factors that determine the appropriate sales price at which you sell or buy a piece of property Real Estate can be defined as properties that comprise land and its tangible attachments.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/about-->
+
+  
+  
+  
+  <!--List-->
+  <section class="List top" id="List">
+    <div class="container">
+      <div class="text">
+        <h2>Our Amenities</h2>
+        <p>Amenities as multipurpose halls and parks make for excellent areas to meet new people and socialise within the community. “As home buyers look for properties with amenities and open spaces, it only shows the kind of benefits home buyers stand to receive through such an offering.</p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fas fa-swimming-pool"></i>
+            <span>Swimming pool</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-dumbbell"></i>
+            <span>Gym & yoga</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Spa & massage</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-swimmer"></i>
+            <span>Surfing Lessons</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-microphone"></i>
+            <span>Conference room</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-water"></i>
+            <span>Diving & smorking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--/List-->
+  
+  
+  
+  <!--services-->
+  <section class="services top" id="services">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>HOME IS NOT A PLACE IT'S A FEELING</h5>
+          <h2>Rooms Throught</h2>
+        </div>
+        <div class="button">
+		<button><a href="View All.html" class="btn1">View all</a></button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="hall.jpg" alt="img" style="width:320px";>
+          </div>
+          <div class="text">
+            <h3>Living Rooms</h3>
+            <p> <span>House is built once in a lifetime and no one could afford a mistake in room dimensions.</span></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="bedroom.jpg" alt="img" style="height:300px";>
+          </div>
+          <div class="text">
+            <h3>Spacious Bedroom</h3>
+            <p> <span>A good bedroom design can help you maximize storage space and keep things organized so that you can focus on relaxation and sleep.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="interior3.jpg" alt="img" style="width:300px";>
+          </div>
+          <div class="text">
+            <h3>Bath Area</h3>
+            <p> <span>there are several components to a bathroomsink,shower,tub and toilet & the ability to which a space.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/services-->
+  
+  
+  
+  <section class="List List2 top" id="List">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>AT THE HEART OF COMMUNICATION</h5>
+          <h2>People Say</h2>
+        </div>
+
+        <div class="para">
+          <p>In the real estate business, you learn more about community issues, you learn more about life, you learn more about the impact of government.probably than any other profession that i know of...</p>     
+		  <p>If you want to succeed in real estate, be passionate, and never give up.</p>
+		</div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<!--blog-->
+  <section class="blog top" id="blog">
+    <div class="container flex">
+      <div class="left">
+        <img src="img3.jpg" alt="img">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Our Property</h2>
+          <p>Property consisting of land and any  permanent structure or improvements on the land, whether natural or man-made.</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">Large Outdoor Area</h2>
+            <div class="accordionItemContent">
+              <p>Enhance the mood with a shade garden, cozy seating and soft lighting. You can play up a large outdoor space by using plants, pathways and furniture to divide it into separate areas serving different purposes.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Spacious Bedrooms</h2>
+            <div class="accordionItemContent">
+              <p>Make your space functional there should be enough room to pass by all of your furniture.Use the corners and verticals!Place furniture according to when you use it,if you can fit a wardrobe in your room, make sure there's a mirror nearby.In a large space,create'zones'using lights and rugs.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Close To Public Transport</h2>
+            <div class="accordionItemContent">
+              <p>Public transport modes include city buses,trolleybuses,trams or light rail and passenger trains, rapid transit metro/subway/underground,etc.and ferries. Public transport between cities is dominated by airlines, coaches, and intercity rail.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Parking Area</h2>
+            <div class="accordionItemContent">
+              <p>According to the National Building Code guidelines, one car parking space must not be less than 13.75 sq. meters. For a 2-wheeler, it must not be less than 1.25 sq. meter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+<!--/blog-->
+
+
+<!--projects-->
+  <section class="projects mtop " id="projects">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PROJECTS</h5>
+          <h2>Projects of Our Real Estate Business</h2>
+        </div>
+              </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img4.jpg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img5.jpg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img6.jpg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img7.jpg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img2.jpg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img8.jpeg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img10.jpg" alt="img">
+        </div>
+        <div class="item">
+          <img src="img9.jpeg" alt="img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+<!--/projects-->
+
+
+
+<!--contacts-->
+  <section class="contact" id="contact">
+  <section class="map top">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.510557543874!2d73.06188137520442!3d19.041277182156172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7eb809f84f55b%3A0xa4d6df122b92e347!2sNestKey%20Realty!5e0!3m2!1sen!2sin!4v1693999112185!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  </section>
+<!--/contacts-->
+
+
+
+  <footer>
+    <div class="container grid top" style="background-image: linear-gradient(#C9D64D, #4C4F07")>
+      <div class="box">
+       <h3>Shashvatay Solutions</h3>
+        <p>A DREAM WRITTEN DOWN WITH A DATE BECOMES A GOAL.</p>
+		<p>A goal broken down into steps becomes a plan.</p>
+        <p>A plan, backed by action,makes your drems come true.</p>
+      </div>
+
+      <div class="box">
+        <h3>Our Links</h3>
+
+        <ul>
+		  <li>Home</li>
+		  <li>About</li>
+          <li>List</li>
+          <li>Services</li>
+          <li>Blog</li>
+          <li>Projects</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li>About Shashvatay Solutions</li>
+          <li>Customer Care/Help</li>
+          <li>Corporate Accounts</li>
+          <li>Financial Information</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Contact Us</h3>
+
+        <ul>
+          <li>Address: Office No-53/54/55, Sai Siddhi chs, Plot No-C/04, Sector 12, Kharghar, Navi Mumbai, Maharashtra 410210
+</li>
+          <li><i class="far fa-envelope"></i>suresh1gawali@gmail.com</li>
+          <li><i class="far fa-phone-alt"></i>766 648 2828</li>
+          <li><i class="far fa-phone-alt"></i>992 023 1018</li>
+          <li><i class="far fa-comments"></i>24/ 7 Customer Services </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
